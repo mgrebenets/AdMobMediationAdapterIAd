@@ -15,12 +15,14 @@ Pod::Spec.new do |s|
                         Copyright 2009 - 2015 Google, Inc. All rights reserved.
                         LICENSE
                     }
-  s.author          = "Google Inc."
+  s.author       = "Google Inc."
   s.source       = { :http => "https://dl.google.com/dl/googleadmobadssdk/libadapteriad.zip", :flatten => true }
-  s.platform = :ios, "6.0"
 
-  s.vendored_libraries = "libAdapterIAd.a"
+  s.platform     = :ios, "6.0"
+
+  s.preserve_path = "libAdapterIAd.a"
+  s.vendored_library = "libAdapterIAd.a"
   s.dependency "Google-Mobile-Ads-SDK", "~> #{s.version}"
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/AdMobMediationAdapterIAd/' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -lAdapterIAd', 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/AdMobMediationAdapterIAd/' }
   s.requires_arc = true
 end

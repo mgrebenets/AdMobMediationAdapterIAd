@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AdMobMediationAdapterIAd"
-  s.version      = "7.5.2"
+  s.version      = "7.7.0"
   s.summary      = "AdMob Mediation Adapter for iAd Network."
   s.description  = <<-DESC
                      By default mediation adapters are not included into iOS AdMob SDK.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = {
                     :type => "Copyright",
                     :text => <<-LICENSE
-                        Copyright 2009 - 2015 Google, Inc. All rights reserved.
+                        Copyright 2009 - 2016 Google, Inc. All rights reserved.
                         LICENSE
                     }
   s.author       = "Google Inc."

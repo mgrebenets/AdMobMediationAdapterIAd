@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AdMobMediationAdapterIAd"
-  s.version      = "7.7.0"
+  s.version      = "7.8.1"
   s.summary      = "AdMob Mediation Adapter for iAd Network."
   s.description  = <<-DESC
                      By default mediation adapters are not included into iOS AdMob SDK.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.preserve_path = "libAdapterIAd.a"
   s.vendored_library = "libAdapterIAd.a"
-  s.dependency "Google-Mobile-Ads-SDK", "~> #{s.version}"
+  s.dependency "Google-Mobile-Ads-SDK", ">= #{s.version}"
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -lAdapterIAd', 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/AdMobMediationAdapterIAd/' }
   s.requires_arc = true
 end
